@@ -50,23 +50,28 @@ public class NetworkManager {
 	public void add_stablishment(String type, String name, String category, String in, String out, String distance, String time, String danger){
 		switch(type){
 			case "Center":
-				int id = RandomIntegerGenerator.generate_new_key(3);
-				DistributionCenter new_center = new DistributionCenter(type,name,id);
+				DistributionCenter new_center = new DistributionCenter(type, name);
 				network.add_vertex(new_center, new_center.name());
+				Vertex<Establishment> vertex = network.find_vertex(name);
+				new_center.set_id(vertex.id());
 				set_connections(name, in, out, distance, time, danger);
+				centers.addLast(new_center);
 				break;
 			case "Store":
-				int id2 = RandomIntegerGenerator.generate_new_key(3);
-				Store new_store = new Store(type,name,category,id2);
+				Store new_store = new Store(type,name,category);
 				stores.addLast(new_store);
 				network.add_vertex(new_store, new_store.name());
+				Vertex<Establishment> v = network.find_vertex(name);
+				new_store.set_id(v.id());
 				set_connections(name, in, out, distance, time, danger);
 				break;
 			case "Station":
-				int id3 = RandomIntegerGenerator.generate_new_key(3);
-				GasStation new_station = new GasStation(type,name,id3);
+				GasStation new_station = new GasStation(type,name);
 				network.add_vertex(new_station, new_station.name());
+				Vertex<Establishment> vertex_s = network.find_vertex(name);
+				new_station.set_id(vertex_s.id());
 				set_connections(name, in, out, distance, time, danger);
+				stations.addLast(new_station);
 				break;
 		}
 	}
@@ -103,8 +108,7 @@ public class NetworkManager {
 			}else{
 				Vertex<Establishment> current_in = network.find_vertex(in_result[(j-1)-k]);
 				network.add_edge(current_in, vertex, distances_result[j] + time_result[j] + danger_result[j]);
-			}
-			
+			}			
 		}
 	}
 	

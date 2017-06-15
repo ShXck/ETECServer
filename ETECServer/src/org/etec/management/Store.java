@@ -9,8 +9,14 @@ public class Store extends Establishment{
 	
 	private List<Product> products_list;
 	
-	public Store(String type, String name, String category, int id) {
-		super(type,name,category,id);
+	public Store(String type, String name, String category) {
+		super(type,name,category);
+		products_list = new List<>();	
+		set_inventory();
+	}
+	
+	public Store(String type, String name, String category, int id){
+		super(type, name,category,id);
 		products_list = new List<>();	
 		set_inventory();
 	}

@@ -7,8 +7,14 @@ public class DistributionCenter extends Establishment{
 	private List<Package> delivered_packages;
 	private List<Package> pending_packages;
 	
-	public DistributionCenter(String type, String name, int id) {
-		super(type,name,id);
+	public DistributionCenter(String type, String name) {
+		super(type,name);
+		this.delivered_packages = new List<>();
+		this.pending_packages = new List<>();
+	}
+	
+	public DistributionCenter(String type, String name, int id){
+		super(type, name,id);
 		this.delivered_packages = new List<>();
 		this.pending_packages = new List<>();
 	}

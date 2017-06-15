@@ -7,8 +7,12 @@ public class GasStation extends Establishment{
 	
 	Random random = new Random();
 
-	public GasStation(String type, String name, int id) {
-		super(type,name,id);
+	public GasStation(String type, String name) {
+		super(type,name);
+	}
+	
+	public GasStation(String type, String name, int id){
+		super(type, name,id);
 	}
 	
 	/**

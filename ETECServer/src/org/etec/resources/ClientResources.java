@@ -20,6 +20,7 @@ import org.etec.management.StoreManager;
 import org.etec.management.User;
 import org.etec.searchalgos.Finder;
 import org.etec.utilities.JSONHandler;
+import org.etec.utilities.Mailer;
 import org.json.JSONObject;
 
 @Path("/user")
@@ -130,6 +131,7 @@ public class ClientResources {
 		manager.run_order(messenger,manager,user.center());
 		user.center().add_pending_package(order);
 		user.cart().restart();
+		Mailer.send_purchase_msg(user.email(), order);
 		return Response.ok(JSONHandler.build_package_info(messenger)).build();
 	}
 	
@@ -149,7 +151,7 @@ public class ClientResources {
 		JSONObject json = new JSONObject(details);
 		manager.add_stablishment(json.getString("type"), json.getString("name"), json.getString("category"), 
 				json.getString("in"), json.getString("out"), json.getString("distance"), json.getString("time"), json.getString("danger"));
-		return Response.ok("Establishment created!").build();
+		return Response.ok("{}").build();
 	}
 	
 	@GET

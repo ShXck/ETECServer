@@ -53,15 +53,15 @@ public class ShellSort {
 	 */
 	private static List<Product> decreasing_code_shell_sort(List<Product> list){
 
-        for (int k = list.size()/2; k != 0; k /= 2){
+		for (int k = list.size() / 2; k != 0; k /= 2) {
             boolean changes = true;
-            while (changes){
+            while (changes) {
                 changes = false;
-                for (int i = k; i < list.size(); i++){
-                    if (((Product)list.get(i-k).data()).cost() < ((Product) list.get(i).data()).cost()){
+                for (int i = k; i < list.size(); i++) {
+                    if (((Product) list.get(i - k).data()).code() < ((Product) list.get(i).data()).code()) {
                         Product aux = (Product) list.get(i).data();
-                        list.get(i).setData(list.get(i-k).data());
-                        list.get(i-k).setData(aux);
+                        list.get(i).setData(list.get(i - k).data());
+                        list.get(i - k).setData(aux);
                         changes = true;
                     }
                 }
