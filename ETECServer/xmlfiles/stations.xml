@@ -1,0 +1,14 @@
+<GasStation>
+	<station id="0001">
+		<name>Shell</name>
+		<fee>10000</fee>	
+	</station>
+	<station id="0002">
+		<name>Texaco</name>
+		<fee>12500</fee>	
+	</station>
+	<station id="0003">
+		<name>Exxon</name>
+		<fee>13000</fee>	
+	</station>
+</GasStation>

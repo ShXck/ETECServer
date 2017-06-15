@@ -1,0 +1,83 @@
+<Products>
+	<product id = "0021">
+		<name>SmartTV</name>
+		<cost>750000</cost>
+	</product>
+	<product id = "0022">
+		<name>Pantalla 4K</name>
+		<cost>840000</cost>
+	</product>
+	<product id = "0023">
+		<name>BOSE Speakers</name>
+		<cost>12500</cost>
+	</product>
+	<product id = "0023">
+		<name>Axess Bluetooth Speakers</name>
+		<cost>15000</cost>
+	</product>
+	<product id = "0024">
+		<name>PlayStation 4</name>
+		<cost>200000</cost>
+	</product>	
+	<product id = "0025">
+		<name>XBOX One</name>
+		<cost>250000</cost>
+	</product>
+	<product id = "0026">
+		<name>WiiU</name>
+		<cost>175000</cost>
+	</product>
+	<product id = "0027">
+		<name>Nintendo Switch</name>
+		<cost>215000</cost>
+	</product>
+	<product id = "0028">
+		<name>Sennheiser Headsets</name>
+		<cost>300000</cost>
+		<category>electronic</category>
+	</product>
+	<product id = "0029">
+		<name>Astro A50 Headsets</name>
+		<cost>150000</cost>
+	</product>
+	<product id = "0030">
+		<name>Bajo electrico vintage</name>
+		<cost>175000</cost>
+	</product>
+	<product id = "0031">
+		<name>Guitarra electrica</name>
+		<cost>125000</cost>
+	</product>
+	<product id = "0032">
+		<name>Controles XBOX</name>
+		<cost>21500</cost>
+	</product>
+	<product id = "0033">
+		<name>Controles PS4</name>
+		<cost>23200</cost>
+	</product>
+	<product id = "0034">
+		<name>Tarjetas Madre</name>
+		<cost>17300</cost>
+	</product>
+	<product id = "0035">
+		<name>Tarjetas de video</name>
+		<cost>75000</cost>
+	</product>
+	<product id = "0036">
+		<name>Fuentes de poder</name>
+		<cost>35000</cost>
+	</product>
+	<product id = "0037">
+		<name>Procesadores Intel</name>
+		<cost>182000</cost>
+	</product>
+	<product id = "0038">
+		<name>Procesadores AMD</name>
+		<cost>190000</cost>
+	</product>
+	<product id = "0039">
+		<name>Laptops</name>
+		<cost>450000</cost>
+	</product>
+</Products>

@@ -1,0 +1,82 @@
+<Products>
+	<product id = "0041">
+		<name>Joggers XL</name>
+		<cost>21000</cost>
+	</product>
+	<product id = "0042">
+		<name>Joggers L</name>
+		<cost>20500</cost>
+	</product>
+	<product id = "0043">
+		<name>Joggers M</name>
+		<cost>20000</cost>
+	</product>
+	<product id = "0044">
+		<name>Joggers S</name>
+		<cost>20000</cost>
+	</product>
+	<product id = "0045">
+		<name>Camisas XL</name>
+		<cost>19000</cost>
+	</product>
+	<product id = "0046">
+		<name>Camisas L</name>
+		<cost>18500</cost>
+	</product>
+	<product id = "0047">
+		<name>Camisas M</name>
+		<cost>19000</cost>
+	</product>
+	<product id = "0048">
+		<name>Camisas S</name>
+		<cost>18500</cost>
+	</product>
+	<product id = "0049">
+		<name>Sweater XL</name>
+		<cost>25000</cost>
+	</product>
+	<product id = "0050">
+		<name>Sweater L</name>
+		<cost>25500</cost>
+	</product>
+	<product id = "0051">
+		<name>Sweater M</name>
+		<cost>24500</cost>
+	</product>
+	<product id = "0052">
+		<name>Sweater S</name>
+		<cost>24500</cost>
+	</product>
+	<product id = "0053">
+		<name>Pantalones XL</name>
+		<cost>33000</cost>>
+	</product>
+	<product id = "0053">
+		<name>Pantalones L</name>
+		<cost>33500</cost>
+	</product>
+	<product id = "0054">
+		<name>Pantalones M</name>
+		<cost>32800</cost>
+	</product>
+	<product id = "0055">
+		<name>Pantalones S</name>
+		<cost>32750</cost>
+	</product>
+	<product id = "0056">
+		<name>Zapatos de vestir</name>
+		<cost>44000</cost>
+	</product>
+	<product id = "0057">
+		<name>Tennis</name>
+		<cost>88000</cost>
+	</product>
+	<product id = "0058">
+		<name>Zapatos de tacones</name>
+		<cost>32000</cost>
+	</product>
+	<product id = "0059">
+		<name>Gorras</name>
+		<cost>13000</cost>
+	</product>
+</Products>

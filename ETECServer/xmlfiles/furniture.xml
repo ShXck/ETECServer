@@ -1,0 +1,82 @@
+<Products>
+	<product id = "0001">
+		<name>Silla Oficina</name>
+		<cost>30000</cost>
+	</product>
+	<product id = "0002">
+		<name>Silla Gamer</name>
+		<cost>75500</cost>
+	</product>
+	<product id = "0003">
+		<name>Sofa-Cama</name>
+		<cost>115000</cost>
+	</product>
+	<product id = "0004">
+		<name>Mecedora</name>
+		<cost>47000</cost>
+	</product>
+	<product id = "0005">
+		<name>Cama King Size</name>
+		<cost>235000</cost>
+	</product>
+	<product id = "0006">
+		<name>Cama Queen Size</name>
+		<cost>156000</cost>
+	</product>
+	<product id = "0007">
+		<name>Cama individual</name>
+		<cost>110000</cost>
+	</product>
+	<product id = "0008">
+		<name>Camarote</name>
+		<cost>88000</cost>
+	</product>
+	<product id = "0009">
+		<name>Sofa Contemporaneo</name>
+		<cost>360000</cost>
+	</product>
+	<product id = "0010">
+		<name>Mesa Redonda</name>
+		<cost>32000</cost>
+	</product>
+	<product id = "0011">
+		<name>Mueble multiuso</name>
+		<cost>62000</cost>
+	</product>
+	<product id = "0012">
+		<name>Mesa de Poker</name>
+		<cost>500000</cost>
+	</product>
+	<product id = "0013">
+		<name>Mesa de cocina</name>
+		<cost>750000</cost>
+	</product>
+	<product id = "0014">
+		<name>Librero</name>
+		<cost>41500</cost>
+	</product>
+	<product id = "0015">
+		<name>Pedestal</name>
+		<cost>13000</cost>
+	</product>
+	<product id = "0016">
+		<name>Mesa de vidrio</name>
+		<cost>52100</cost>
+	</product>
+	<product id = "0017">
+		<name>Silla de exterior</name>
+		<cost>32000</cost>
+	</product>
+	<product id = "0018">
+		<name>Lampara</name>
+		<cost>22000</cost>
+	</product>
+	<product id = "0019">
+		<name>Cortinas</name>
+		<cost>15000</cost>
+	</product>
+	<product id = "0020">
+		<name>Acuario</name>
+		<cost>95000</cost>
+	</product>
+</Products>

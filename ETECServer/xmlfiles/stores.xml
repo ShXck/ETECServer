@@ -1,0 +1,30 @@
+<Stores>
+	<store id = "0001">
+		<name>A+R</name>
+		<category>furniture</category>
+	</store>
+	<store id = "0002">
+		<name>WeegoHome</name>
+		<category>furniture</category>
+	</store>
+	<store id = "0003">
+		<name>HGX</name>
+		<category>electronics</category>
+	</store>
+	<store id = "0004">
+		<name>NXT</name>
+		<category>electronics</category>
+	</store>
+	<store id = "0005">
+		<name>Jack Spade</name>
+		<category>clothing</category>
+	</store>
+	<store id = "0006">
+		<name>Jenni Kayne</name>
+		<category>clothing</category>
+	</store>
+	<store id = "0007">
+		<name>AXXES</name>
+		<category>electronics</category>
+	</store>
+</Stores>
