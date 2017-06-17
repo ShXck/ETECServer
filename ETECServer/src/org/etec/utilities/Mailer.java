@@ -16,20 +16,20 @@ import org.etec.management.Package;
 
 public class Mailer {
 	
-	private static final String SENDER = "m4ss97@gmail.com";
-	private static final String PASSWORD = "jijijijajaja516";
+	private static final String SENDER = "some@gmail.com";
+	private static final String PASSWORD = "*******";
 	private static final String HOST = "smtp.gmail.com";
 	private static final String PORT = "587";
 	
 	/**
-	 * Envia la información del paquete al usuario
+	 * Envia la informaciÃ³n del paquete al usuario
 	 * @param receiver el correo destino.
 	 * @param name el nombre del paciente.
 	 */
 	public static void send_arrived_msg(String receiver, Package p){
 		
 		final String SUBJECT = "TU PAQUETE HA LLEGADO";
-		final String MESSAGE = "Tu paquete " + p.toString() + "\n Ha llegado al centro de distribución " + p.messenger().destination().name();
+		final String MESSAGE = "Tu paquete " + p.toString() + "\n Ha llegado al centro de distribuciÃ³n " + p.messenger().destination().name();
 		
 		Properties properties = new Properties();
 		properties.put("mail.smtp.port", PORT);
@@ -73,7 +73,7 @@ public class Mailer {
 	}
 	
 	/**
-	 * Envia la información del paquete al usuario
+	 * Envia la informaciÃ³n del paquete al usuario
 	 * @param receiver el correo destino.
 	 * @param name el nombre del paciente.
 	 */
