@@ -227,6 +227,13 @@ public class NetworkManager {
 	}
 	
 	/**
+	 * @return la lista de ordenes en desplazamiento.
+	 */
+	public List<OrderRunner> running_orders(){
+		return this.active_packages;
+	}
+	
+	/**
 	 * @return el grafo que representa la red.
 	 */
 	public Graph<Establishment> graph(){

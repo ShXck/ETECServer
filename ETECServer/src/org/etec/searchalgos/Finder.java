@@ -6,6 +6,7 @@ import org.etec.management.DistributionCenter;
 import org.etec.management.Product;
 import org.etec.management.Store;
 import org.etec.management.User;
+import org.etec.management.Package;
 
 public class Finder {
 	
@@ -72,6 +73,21 @@ public class Finder {
     		if (current.name().equals(name)) {
 				return current;
 			}
+    	}
+    	return null;
+    }
+    
+    /**
+     * Busca un paquete por su ID dentro de un centro de distribucion
+     * @param id id del paquete
+     * @param center el centro en que se va a buscar
+     * @return el paquete
+     */
+    public static Package find_package(int id, DistributionCenter center){
+    	
+    	for(int i = 0; i<center.pending().size();i++){
+    		 Package current = (Package)center.pending().get(i).data();
+    		if(current.id() == id) return current;
     	}
     	return null;
     }

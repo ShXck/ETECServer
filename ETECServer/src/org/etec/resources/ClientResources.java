@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.etec.datastructures.List;
+import org.etec.management.DistributionCenter;
 import org.etec.management.Messenger;
 import org.etec.management.NetworkManager;
 import org.etec.management.Package;
@@ -178,5 +179,32 @@ public class ClientResources {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response get_path_status(){
 		return Response.ok(JSONHandler.build_route_change(manager.route_changes())).build();
+	}
+	
+	@GET
+	@Path("{center}/packages")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response get_packages(@PathParam("center") String center_name){
+		return Response.ok(JSONHandler.build_centers_package_list(Finder.find_center(center_name, manager.centers()))).build();
+	}
+	
+	@PUT
+	@Path("/changestatus/{center}/{package}")
+	public void change_package_stat(@PathParam("center") String center_name, @PathParam("package") String id_string){
+		System.out.println(id_string);
+		int id = Integer.parseInt(id_string);
+		DistributionCenter current_center = Finder.find_center(center_name, manager.centers());
+		Package current_package = Finder.find_package(id,current_center);
+		current_package.change_status("delivered");
+		current_center.add_delivered(current_package);
+	}
+	
+	@GET
+	@Path("{center}/{pack}/stat")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response get_package_Status(@PathParam("center") String center_name, @PathParam("pack") int id){
+		DistributionCenter current_center = Finder.find_center(center_name, manager.centers());
+		Package current_package = Finder.find_package(id,current_center);
+		return Response.ok(JSONHandler.build_package_stat(current_center.delivered().contains(current_package))).build();
 	}
 }

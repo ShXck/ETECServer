@@ -201,4 +201,37 @@ public class JSONHandler {
 		}
 		return info.toString();
 	}
+	
+	/**
+	 * Construye un json con los paquetes dentro de cada centro de distribución disponible.
+	 * @param el centro a ser buscado.
+	 * @return el json con los paquetes dentro de un centro.
+	 */
+	public static String build_centers_package_list(DistributionCenter center) {
+		JSONObject json_center_pkgs = new JSONObject();
+		JSONArray deliveredList = new JSONArray();
+		for(int i = 0; i < center.delivered().size(); i++){
+			Package current = (Package) center.delivered().get(i).data();
+			deliveredList.put(current.id());
+			}
+		json_center_pkgs.put("delivered", deliveredList);
+		JSONArray pendingList = new JSONArray();
+		for(int i = 0; i < center.pending().size(); i++){
+			Package current = (Package) center.pending().get(i).data();
+			pendingList.put(current.id());
+		}
+		json_center_pkgs.put("pending", pendingList);
+		return json_center_pkgs.toString();
+	}
+	
+	/**
+	 * Construye un Json con los estados del paquete
+	 * @param un estado booleano de si se ha entregado
+	 * @return un Json con el estado actual del paquete
+	 */
+	public static String build_package_stat(Boolean isDelivered) {
+		JSONObject json_center_pkgs = new JSONObject();
+		json_center_pkgs.put("stat",isDelivered);
+		return json_center_pkgs.toString();
+	}
 }

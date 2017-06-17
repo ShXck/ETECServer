@@ -7,6 +7,8 @@ import org.etec.datastructures.List;
 import org.etec.datastructures.Node;
 import org.etec.utilities.Mailer;
 
+import sun.security.jca.GetInstance;
+
 public class OrderRunner{
 	
 	private NetworkManager network;
@@ -55,9 +57,33 @@ public class OrderRunner{
 	 * Cambia la ruta de los mensajeros, se da cuando hay un cierre de ruta
 	 */
 	public void change_route(){
+		
+		System.out.println("Viejo camino de " + messenger.delivery().buyer().name());
+		System.out.println();
+		final_path.printList();
+		
 		path = dijsktra.dijkstra(network.graph(), messenger.current_point().id());
 		final_path = dijsktra.find_path_to(network.graph(), messenger.current_point().id(), messenger.destination().id(), path);
 		
+		System.out.println("Nuevo camino de " + messenger.delivery().buyer().name());
+		System.out.println();
 		final_path.printList();
 	}
+	
+	
+	public boolean equals(Object o){
+		
+		if (o == this) {
+			return true;
+		}
+		
+		if (!(o instanceof OrderRunner)) {
+			return false;
+		}
+		
+		OrderRunner p = (OrderRunner)o;
+		return this.messenger.delivery().equals(p.messenger.delivery());
+	}
+	
+	
 }

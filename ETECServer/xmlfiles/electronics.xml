@@ -1,6 +1,6 @@
 <Products>
 	<product id = "0021">
-		<name>SmartTV</name>
+		<name>Smart TV</name>
 		<cost>750000</cost>
 	</product>
 	<product id = "0022">
@@ -24,7 +24,7 @@
 		<cost>250000</cost>
 	</product>
 	<product id = "0026">
-		<name>WiiU</name>
+		<name>Wii U</name>
 		<cost>175000</cost>
 	</product>
 	<product id = "0027">
